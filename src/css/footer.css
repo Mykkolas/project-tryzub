@@ -1,4 +1,4 @@
-/* body {
+body {
     color: aliceblue;
 }
 
@@ -58,10 +58,10 @@ form-api {
 
 
 
- 
- */
-/*
+
+
 @media screen and (min-width: 768px) {
     section {
         padding-bottom: 169px;
-        /* individual padding for footer */
+    }
+}
