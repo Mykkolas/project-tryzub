@@ -1,16 +1,53 @@
+ <footer>
  <section>
       <div class="container">
         <div class="inner-container">
         <div class="top">
-            <img src="https://t3.ftcdn.net/jpg/04/97/66/28/360_F_497662812_7rGW6PMBJR9AbrKcGgN5S1luXYTjH92i.jpg" alt=""
+           
+
+ <picture>
+        <!-- <source
+          srcset="
+            /img/about_us/about-us-img-x1.jpg 1x,
+            /img/about_us/about-us-img-x2.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+
+        <source
+          srcset="
+            /img/about_us/about-us-img-tab-x1.jpg 1x,
+            /img/about_us/about-us-img-tab-x2.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            /img/hero+header/logo_1x.png 1x,
+            /img/hero+header/logo_2x.png 2x
+          "
+          media="(max-width: 767px)"
+        /> -->
+
+         <img src="/img/hero+header/logo_1x.png" alt="Logo"
             class="logo-img">
-            <h2>LET'S <span>WORK</span></h2>
-            <h2>TOGETHER</h2>
+      </picture>
+
+
+
+
+
+            <h2>LET’S <span>WORK</span></h2>
         </div>
+            <h2 class="together">TOGETHER</h2>
+
         <div class="middle">
             <form class="form-api">
-                <input type="email">
-                <input type="text">
+            <div class="email-container">
+                <input autocomplete="off"   type="text" class="email-input" name="email"  placeholder="clients@gmail.com">
+                </div>
+                <input  autocomplete="off" type="text" class="comment-input" name="comment"  placeholder="comments" >
                 <button class="send-btn">Send</button>
             </form>
         </div>
@@ -22,6 +59,14 @@
              class="phone-a"
           >+380 11 1111 11 11</a>
         </div>
+        <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-inside">
+             <button class="close-modal">&times;</button>
+        <div class="modal-message"></div>
+        </div>
+        </div>
         </div>
       </div>
       </section>
+      </footer>
