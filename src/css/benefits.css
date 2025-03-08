@@ -8,6 +8,7 @@ html {
 }
 
 /* .benefits {
+  padding: 0 32px;
 }
 .benefits-wrapper {
 } */
@@ -106,6 +107,10 @@ html {
 }
 
 @media screen and (min-width: 1440px) {
+  .benefits {
+    padding: 0 32px;
+  }
+
   .benefits-wrapper {
     display: grid;
     grid-template-areas:
