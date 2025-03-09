@@ -21,15 +21,18 @@ html {
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
 }
+
 .benefits-list {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .benefits-item {
   max-width: 344px;
 }
+
 .benefits-block {
   border-radius: 20px;
   padding: 24px;
@@ -37,6 +40,7 @@ html {
   /* height: 270px; */
   background-color: #242527;
 }
+
 .benefits-accent {
   border-radius: 10px;
   max-width: 48px;
@@ -62,6 +66,7 @@ html {
   letter-spacing: -0.02em;
   color: #fafafa;
 }
+
 .benefit-p {
   margin-top: 8px;
   font-weight: 500;
@@ -122,6 +127,7 @@ html {
   .benefits-header {
     grid-area: header;
   }
+
   .benefits-list {
     grid-area: content;
 

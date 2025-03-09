@@ -1,0 +1,152 @@
+.swiper-slide {
+    list-style: none;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    width: 344px;
+    height: 302px;
+    /* Enables scrolling if content overflows */
+    /*  overflow: scroll;
+    overflow-x: hidden; */
+}
+
+
+
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+    background: transparent;
+    cursor: not-allowed;
+}
+
+.error {
+    text-align: left;
+    color: red;
+    font-size: 18px;
+}
+
+
+/* MINE */
+
+.review-header {
+    padding-bottom: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.review-avatar {
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-bottom: 32px;
+}
+
+.review-author {
+    color: #fafafa;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    display: -webkit-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+
+    line-clamp: 6;
+    box-orient: vertical;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.buttons {
+    top: 54px;
+    position: relative;
+    left: 150px;
+}
+
+.swiper-button-next {
+    position: absolute;
+    left: 15px;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: -50px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.swiper-button-prev::after {
+    content: "";
+    /* background-image: url("path-to-your-left-arrow.svg"); */
+    /* replace with svg */
+}
+
+.swiper-button-next::after {
+    content: "";
+    /* background-image: url("path-to-your-left-arrow.svg"); */
+    /* replace with svg */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 60px;
+    padding: 14px;
+    width: 52px;
+    height: 52px;
+}
+
+.reviews-container {
+    padding: 0 16px;
+    height: 442px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 68px;
+        height: 68px;
+    }
+
+    .swiper-button-next {
+        left: 32px;
+    }
+
+    .swiper-button-prev {
+        left: -50px;
+    }
+
+    .buttons {
+        top: 54px;
+        left: 330px;
+    }
+
+    .reviews-container {
+        padding: 0 32px;
+        height: 458px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .buttons {
+        left: 660px;
+    }
+}

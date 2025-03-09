@@ -4,6 +4,10 @@
     /* background-image: url('../img/footer/glas-1x.jpg'); */
 }
 
+.footer-section {
+    padding-bottom: 32px;
+}
+
 .send-btn {
     margin-top: 16px;
     margin-bottom: 74px;
@@ -159,13 +163,16 @@ body.modal-open {
 
 
 @media screen and (min-width: 768px) {
+    .footer-section {
+        padding-bottom: 0;
+    }
 
     .email-container {
         width: 245px;
         margin-bottom: 0;
     }
 
-    section {
+    .inner-container {
         padding-bottom: 169px;
     }
 
