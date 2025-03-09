@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="/Favicon.svg" />
+    <link rel="icon" href="/project-tryzub/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script type="module" crossorigin src="/project-tryzub/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-tryzub/assets/vendor-Cuvn3jHe.js">
-    <link rel="stylesheet" crossorigin href="/project-tryzub/assets/index-BWcJnwlL.css">
+    <link rel="stylesheet" crossorigin href="/project-tryzub/assets/index-DmXa7RM5.css">
   </head>
   <body>
     <main>
@@ -24,7 +26,7 @@
           <div class="benefits-block">
             <div class="benefits-accent">
               <svg class="benefits-icon" width="24" height="24">
-                <use href="../img/benefits/benefits.svg#icon-user-01"></use>
+                <use href="/project-tryzub/assets/benefits-6uFByC7U.svg#icon-user-01"></use>
               </svg>
             </div>
             <div class="benefits-content">
@@ -41,7 +43,7 @@
             <div class="benefits-accent">
               <svg class="benefits-icon" width="24" height="24">
                 <use
-                  href="../img/benefits/benefits.svg#icon-message-chat-circle"
+                  href="/project-tryzub/assets/benefits-6uFByC7U.svg#icon-message-chat-circle"
                 ></use>
               </svg>
             </div>
@@ -58,7 +60,7 @@
           <div class="benefits-block">
             <div class="benefits-accent">
               <svg class="benefits-icon" width="24" height="24">
-                <use href="../img/benefits/benefits.svg#icon-brush-01"></use>
+                <use href="/project-tryzub/assets/benefits-6uFByC7U.svg#icon-brush-01"></use>
               </svg>
             </div>
             <div class="benefits-content">
@@ -75,7 +77,7 @@
             <div class="benefits-accent">
               <svg class="benefits-icon" width="24" height="24">
                 <use
-                  href="../img/benefits/benefits.svg#icon-hourglass-02"
+                  href="/project-tryzub/assets/benefits-6uFByC7U.svg#icon-hourglass-02"
                 ></use>
               </svg>
             </div>
@@ -96,10 +98,27 @@
   </div>
 </section>
 
+      <section>
+    <div class="container reviews-container">
+        <h2 class="review-header">REVIEWS</h2>
+    <div class="swiper">
+    <ul class="swiper-wrapper reviews-list"></ul>
+</div>
+<div class="buttons">
+    <button class="swiper-button-prev"> <svg class="prev-icon" width="24" height="24">
+                <use href=""></use>
+              </svg></button>
+    <button class="swiper-button-next"><svg class="next-icon" width="24" height="24">
+                <use href=""></use>
+              </svg></button>
+    </div>
+</div>
+
+</section>
       <!-- Here we will load partials -->
     </main>
      <footer>
- <section>
+ <section id="Footer" class="footer-section">
       <div class="container">
         <div class="inner-container">
         <div class="top">
@@ -145,7 +164,7 @@
         <div class="middle">
             <form class="form-api">
             <div class="email-container">
-                <input autocomplete="off"   type="text" class="email-input" name="email"  placeholder="clients@gmail.com">
+                <input autocomplete="off"   type="text" class="email-input" name="email"  placeholder="clients@gmail.com"> <!--pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"  -->
                 </div>
                 <input  autocomplete="off" type="text" class="comment-input" name="comment"  placeholder="comments" >
                 <button class="send-btn">Send</button>
