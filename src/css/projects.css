@@ -80,6 +80,7 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
+    cursor: pointer;
 }
 
 .projects-slides-info-button:hover {
@@ -106,29 +107,50 @@
     gap: 12px;
     align-items: center;
     justify-content: center;
+    margin-top: 32px;
 }
 
-.projects-button-left,
-.projects-button-right {
+.swiper-button-prev,
+.swiper-button-next {
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    width: 52px !important;
+    height: 52px !important;
     border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
+    border-radius: 50%;
     outline: none;
     background: #1c1d20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;    
 }
 
-.projects-button-left-svg,
-.projects-button-right-svg {
+.projects-button-left:disabled,
+.projects-button-right:disabled {
+    /* background: gray; */
+    cursor: not-allowed;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;    
+}
+
+.projects-button-svg
+ {
     fill: #fafafa; 
     width: 24px;
     height: 24px;
+} 
+
+.projects-swiper {
+    width: 100%;
+    overflow: hidden; 
 }
 
- .projects-button-left-svg {
-    transform: rotate(-180deg);
-}
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -161,32 +183,31 @@
 
     .projects-buttons {
         gap: 20px;
-        margin-top: 32px;
+        margin-top: 64px;
     }
 
-    .projects-button-left,
-    .projects-button-right {                
-        padding: 18px;
-        width: 68px;
-        height: 68px;    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 68px !important;
+        height: 68px !important;
     }
 
-    .projects-button-left-svg,
-    .projects-button-right-svg {
+    .projects-button-svg {
         width: 32px;
         height: 32px;
-    }
-
+    }    
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-    .projects-slides {
+    .projects-slides { 
         flex-direction: row;
+        flex-wrap: nowrap;                   
     }
 
     .projects-slides-info {
     width: 50%;
+    flex-shrink: 0;
     }
     
     .projects-slides-info-techlist {
@@ -195,5 +216,11 @@
 
     .projects-slides-pictures {
         padding: 120px 37px;
-    }
+        max-width: 50%;  
+        flex-shrink: 0;
+    }     
+        .swiper-slide {
+            width: 100%;            
+            display: flex !important;
+        }
 }
