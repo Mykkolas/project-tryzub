@@ -1,7 +1,7 @@
 .inner-container {
     width: 100%;
     height: auto;
-    /* background-image: url('../img/footer/glas-1x.jpg'); */
+    background: url('/img/footer/footer-glass_mobil_1x.png') right center no-repeat;
 }
 
 .footer-section {
@@ -119,8 +119,10 @@ input {
     font-size: 20px;
     width: 22px;
     height: 22px;
-    color: #FAFAFA;
     background-color: transparent;
+    background: none;
+    padding: 0;
+    stroke: #fafafa;
 }
 
 body.modal-open {
@@ -174,6 +176,7 @@ body.modal-open {
 
     .inner-container {
         padding-bottom: 169px;
+        background: url('/img/footer/footer-glass_tablet_1x.png') right center no-repeat;
     }
 
     .form-api {
@@ -243,6 +246,10 @@ body.modal-open {
 }
 
 @media only screen and (min-width: 1440px) {
+    .inner-container {
+        background: url('/img/footer/footer-glass_desktop_1x.png') right center no-repeat;
+    }
+
     .container {
         padding: 0 196px;
     }
@@ -315,4 +322,22 @@ body.modal-open {
     width: 100%;
     padding-top: 5px;
     white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .inner-container {
+        background: #1c1d20 url('/img/footer/footer-glass_mobil_2x.png') right center no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .inner-container {
+        background: #1c1d20 url('/img/footer/footer-glass_tablet_2x.png') right center no-repeat;
+    }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .inner-container {
+        background: #1c1d20 url('/img/footer/footer-glass_desktop_2x.png') right center no-repeat;
+    }
 }
