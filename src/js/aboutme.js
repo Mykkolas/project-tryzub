@@ -56,9 +56,7 @@ export function initializeAccordion() {
 export function skillSwiper() {
   document.addEventListener("DOMContentLoaded", function () {
     skillSwiper();
-});
 
-function skillSwiper() {
     const swiper = new Swiper(".skills-sld", {
         slidesPerView: 1, // Динамічне оновлення
         spaceBetween: 16,
@@ -82,5 +80,5 @@ function skillSwiper() {
             },
         }
     });
-}
+  });
 }
