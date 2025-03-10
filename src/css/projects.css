@@ -110,8 +110,8 @@
     margin-top: 32px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.projects-swiper-button-prev,
+.projects-swiper-button-next {
     position: static !important;
     transform: none !important;
     margin: 0 !important;
@@ -134,8 +134,8 @@
     cursor: not-allowed;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.projects-swiper-button-prev::after,
+.projects-swiper-button-next::after {
     display: none;    
 }
 
@@ -186,8 +186,8 @@
         margin-top: 64px;
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
+    .projects-swiper-button-prev,
+    .projects-swiper-button-next {
         width: 68px !important;
         height: 68px !important;
     }

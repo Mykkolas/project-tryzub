@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectsSection = document.querySelector("#projects");
   if (!projectsSection) return;
   const projectsSwiperContainer = projectsSection.querySelector(".projects-swiper");
-  const prevButton = projectsSection.querySelector(".swiper-button-prev");
-  const nextButton = projectsSection.querySelector(".swiper-button-next");
+  const projectsPrevButton = projectsSection.querySelector(".projects-swiper-button-prev");
+  const projectsNextButton = projectsSection.querySelector(".projects-swiper-button-next");
     
   const projectsSwiper = new Swiper(projectsSwiperContainer, {
     slidesPerView: 1,
@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 600,
     allowTouchMove: true,
     navigation: {
-      nextEl: nextButton,
-      prevEl: prevButton,
+      nextEl: projectsNextButton,
+      prevEl: projectsPrevButton,
     },
     on: {      
       init: function (swiper) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function updateNavButtons(swiper) {
-    prevButton.disabled = swiper.isBeginning;
-    nextButton.disabled = swiper.isEnd;
+    projectsPrevButton.disabled = swiper.isBeginning;
+    projectsNextButton.disabled = swiper.isEnd;
   }
 });
