@@ -65,15 +65,16 @@ export default async function handleSubmit(e) {
     const comment = commentInput.value.trim()
 
     if (!email || !comment) {
-        return alert("Please fill all the fields!");
+        showModal(`<h2>PLEASE FILL ALL THE FIELDS</h2>`)
+        return
     }
 
     if (!validateEmail(email)) {
-        feedbackMessage.style.color = "#ED3B44";
-        feedbackMessage.textContent = "Invalid input!";
-        feedbackMessage.style.display = "block";
-        emailInput.classList.add("error");
-        emailInput.classList.remove("success");
+        feedbackMessage.style.color = "#ED3B44"
+        feedbackMessage.textContent = "Invalid input!"
+        feedbackMessage.style.display = "block"
+        emailInput.classList.add("error")
+        emailInput.classList.remove("success")
         return;
     }
 

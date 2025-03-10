@@ -1,38 +1,21 @@
  <footer>
- <section>
+ <section id="Footer" class="footer-section">
       <div class="container">
         <div class="inner-container">
         <div class="top">
            
 
- <picture>
-        <!-- <source
-          srcset="
-            /img/about_us/about-us-img-x1.jpg 1x,
-            /img/about_us/about-us-img-x2.jpg 2x
-          "
-          media="(min-width: 1440px)"
-        />
+        
 
-        <source
-          srcset="
-            /img/about_us/about-us-img-tab-x1.jpg 1x,
-            /img/about_us/about-us-img-tab-x2.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-
-        <source
-          srcset="
-            /img/hero+header/logo_1x.png 1x,
-            /img/hero+header/logo_2x.png 2x
-          "
-          media="(max-width: 767px)"
-        /> -->
-
-         <img src="/img/hero+header/logo_1x.png" alt="Logo"
-            class="logo-img">
-      </picture>
+         <img 
+         srcset="
+          ./img/footer/footer_img_1x.jpg 1x,
+          ./img/footer/footer_img_2x.jpg 2x
+        "
+         src="/img/footer/footer_img_1x.png" 
+         alt="Logo"
+        class="logo-img"
+          />
 
 
 
@@ -45,7 +28,7 @@
         <div class="middle">
             <form class="form-api">
             <div class="email-container">
-                <input autocomplete="off"   type="text" class="email-input" name="email"  placeholder="clients@gmail.com">
+                <input autocomplete="off"   type="text" class="email-input" name="email"  placeholder="clients@gmail.com"> <!--pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"  -->
                 </div>
                 <input  autocomplete="off" type="text" class="comment-input" name="comment"  placeholder="comments" >
                 <button class="send-btn">Send</button>
@@ -62,7 +45,16 @@
         <div class="modal-overlay">
         <div class="modal">
             <div class="modal-inside">
-             <button class="close-modal">&times;</button>
+             <button class="close-modal">
+              <svg
+          class="close-svg"
+          width="22"
+          height="22"
+          aria-label="close"
+        >
+          <use href="/img/icons.svg#icon-close-x"></use>
+        </svg>
+             </button>
         <div class="modal-message"></div>
         </div>
         </div>
