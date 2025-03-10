@@ -17,6 +17,7 @@
   "author": "Mykola Yelchuiev <mykolayelchuiev@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.4.0",
     "axios": "^1.8.2",
     "swiper": "^11.2.5",
     "vite-plugin-full-reload": "^1.2.0",
