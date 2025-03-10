@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const reviewsList = document.querySelector(".reviews-list");
-const prevButton = document.querySelector(".swiper-button-prev");
-const nextButton = document.querySelector(".swiper-button-next");
+const prevButton = document.querySelector(".prev-btn");
+const nextButton = document.querySelector(".next-btn ");
 
 export default async function fetchReviews() {
     try {
