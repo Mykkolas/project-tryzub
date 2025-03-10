@@ -5,9 +5,8 @@
 
 /* Styles for partials */
 @import url('./projects.css');
-
 @import url('./aboutme.css');
-@import url('./footer.css');
+@import url('./footer.css'); 
 @import url('./benefits.css');
-@import url('./reviews.css');
+@import url('./reviews.css'); 
 @import url('./hero.css');
