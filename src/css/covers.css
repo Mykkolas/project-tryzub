@@ -3,6 +3,17 @@
     overflow: hidden;
     position: relative;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
 .covers-container {
     max-width: 375px;
     margin: auto;
@@ -66,7 +77,8 @@
     
 }
 .covers-image {
-
+ width: 282px;
+ height: 163px;
 }
 @keyframes marquee {
     from {
@@ -85,7 +97,10 @@
         max-width: 768px;
         padding: 0px 32px;
         } 
-
+        .covers-image {
+            width: 544px;
+            height: 314px;
+           }
 }
 
 @media screen and (min-width: 1440px) {
