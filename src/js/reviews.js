@@ -32,7 +32,7 @@ export default async function fetchReviews() {
 }
 
 function initSwiper() {
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper(".reviews-swiper", {
         slidesPerView: 1,// change dynamically
         spaceBetween: 16,
         navigation: {
