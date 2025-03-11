@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.iconbl {
-  color: white;
-  fill: #fafafa;
+.benefits-icon {
+  fill: none;
+  stroke: #fafafa;
 }
 
 /* .benefits {
