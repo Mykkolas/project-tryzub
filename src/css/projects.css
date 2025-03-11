@@ -131,7 +131,6 @@
     stroke: #fafafa;
 }
 
-
 .projects-swiper-button-prev:hover,
 .projects-swiper-button-next:hover {
     background: #242527;
@@ -235,9 +234,4 @@
         max-width: 50%;  
         flex-shrink: 0;
     }     
-    
-    /* .swiper-slide {
-        width: 100% !important;
-        display: flex !important;
-    } */
 }
