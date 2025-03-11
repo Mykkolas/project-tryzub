@@ -15,7 +15,7 @@ export default async function fetchReviews() {
         }
 
         reviewsList.innerHTML = reviews.map(review => `
-            <li class="swiper-slide">
+            <li class="swiper-slide sliding-sw">
                 <div class="review-item">    
                 <img src="${review.avatar_url}" alt="${review.author}'s avatar" class="review-avatar" />
                   <p class="review-author">${review.author}</p>

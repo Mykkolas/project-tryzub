@@ -1,19 +1,15 @@
 export function initializeFAQAccordion() {
     const faqItems = document.querySelectorAll(".faq-item");
-    const isDesktop = window.innerWidth >  1440; 
 
-    faqItems.forEach((item, index) => {
+    faqItems.forEach((item) => {
         const toggleButton = item.querySelector(".faq-btn");
         const content = item.querySelector(".faq-answer");
 
-        if (isDesktop || index < 3) {
-            item.classList.add("is-open");
-            content.style.height = content.scrollHeight + "px";
-        } else {
-            content.style.height = "0";
-            content.style.overflow = "hidden";
-            content.style.transition = "height 0.3s ease";
-        }
+        // Початково всі закриті
+        item.classList.remove("is-open");
+        content.style.height = "0";
+        content.style.overflow = "hidden";
+        content.style.transition = "height 0.3s ease";
 
         toggleButton.addEventListener("click", () => {
             const isOpen = item.classList.contains("is-open");
