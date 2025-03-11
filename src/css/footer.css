@@ -250,9 +250,11 @@ body.modal-open {
         background: url('/img/footer/footer-glass_desktop_1x.png') right center no-repeat;
     }
 
-    .container {
+    .foot-cont {
         padding: 0 196px;
     }
+
+
 
     .email-container {
         width: 390px;
