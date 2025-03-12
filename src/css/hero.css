@@ -3,13 +3,12 @@
 }
 
 .hero-background {
-background-image: 
-image-set(url('../img/hero+header/hero-mob-1x.png') 1x,
-            url('../img/hero+header/hero-mob-2x.png') 2x);
+    background-image:
+        image-set(url('/img/hero+header/hero-mob-1x.png') 1x,
+            url('/img/hero+header/hero-mob-2x.png') 2x);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-            
+    background-position: center;            
 }
 
 .hero-title {
@@ -21,6 +20,7 @@ image-set(url('../img/hero+header/hero-mob-1x.png') 1x,
     color: #FAFAFA;
     padding: 281px 16px;
     text-align: left;
+
 }
 
 ul {
@@ -35,7 +35,7 @@ ul {
   gap: 4px;
 }
 
-.soc-link-item{
+.soc-link-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@ ul {
     height: 37px;
 }
 
-.soc-link-email{
+.soc-link-email {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@ ul {
 .soc-link-item:hover,
 .soc-link-item:focus,
 .soc-link-email:hover,
-.soc-link-email:focus{
+.soc-link-email:focus {
     border-color: #FAFAFA;
     outline: none;
 }
@@ -76,8 +76,8 @@ ul {
 @media screen and (min-width: 768px){ 
 .hero-background {
     background-image:
-    image-set(url('../img/hero+header/hero_tab_1x.png') 1x,
-            url('../img/hero+header/hero_tab_2x.png') 2x);
+    image-set(url('/img/hero+header/hero_tab_1x.png') 1x,
+            url('/img/hero+header/hero_tab_2x.png') 2x);
 }
 .hero-title {
     font-size: 90px;
@@ -108,8 +108,8 @@ ul {
 @media only screen and (min-width: 1440px){
     .hero-background {
     background-image:
-    image-set(url('../img/hero+header/hero_dt_1x.png') 1x,
-            url('../img/hero+header/hero_dt_2x.png') 2x);
+    image-set(url('/img/hero+header/hero_dt_1x.png') 1x,
+            url('/img/hero+header/hero_dt_2x.png') 2x);
 }
 
 .hero-title {

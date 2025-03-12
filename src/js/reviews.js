@@ -15,7 +15,7 @@ export default async function fetchReviews() {
         }
 
         reviewsList.innerHTML = reviews.map(review => `
-            <li class="swiper-slide">
+            <li class="swiper-slide sliding-sw">
                 <div class="review-item">    
                 <img src="${review.avatar_url}" alt="${review.author}'s avatar" class="review-avatar" />
                   <p class="review-author">${review.author}</p>
@@ -32,12 +32,12 @@ export default async function fetchReviews() {
 }
 
 function initSwiper() {
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper(".reviews-swiper", {
         slidesPerView: 1,// change dynamically
         spaceBetween: 16,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".next-btn",
+            prevEl: ".prev-btn",
         },
         keyboard: {
             enabled: true,
