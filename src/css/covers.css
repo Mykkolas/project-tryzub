@@ -18,13 +18,13 @@
     max-width: 375px;
     margin: auto;
     padding: 0px 16px;
-        }
+            }
   
 .covers-line {
     display: flex;
     flex-direction: column; 
     gap: 32px;
-    transform: rotate(16deg) translate(10px);
+    transform: rotate(16deg);
   }
     
     .covers-background {
@@ -40,54 +40,39 @@
         background-position-y: 100%;
         z-index: -1; 
     }
-.covers-line-first,
-.covers-line-second, 
-.covers-line-third { 
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-  }
 
-.covers-first-line-list li,
-.covers-second-line-list li,
-.covers-third-line-list li {
-    display: inline-block;
-    flex-shrink: 0;
-}
-.covers-first-line-list, 
-.covers-second-line-list, 
-.covers-third-line-list {
+
+.covers-line-list {
     display: flex;
-    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
    }
 
-.covers-first-line-list {
-    animation: marquee 20s linear infinite; 
-}
-.covers-second-line-list {
-    animation: marquee 15s linear infinite;
-}
-.covers-third-line-list {
-    animation: marquee 10s linear infinite;
+   .covers-line-item {
+   display: inline-block;
+   flex-shrink: 0;
+
 }
 
-
-.covers-item-fist, .covers-item-second, .covers-item-third {
-    
-}
 .covers-image {
  width: 282px;
  height: 163px;
 }
-@keyframes marquee {
+@keyframes marqueeLine {
     from {
-        transform: translateX(0%);
+      transform: translateX(-20%);
     }
+    
     to {
-        transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-}
+  }
 
 @media screen and (min-width: 768px) {
     .covers {
@@ -112,4 +97,15 @@
         margin: auto;
         padding: 0px 7px;
         } 
+}
+
+.covers {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.covers.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
