@@ -46,7 +46,7 @@ function initSwiper() {
         spaceBetween: 0,
         enabled: true,
         loop: true,
-        watchOverflow: false,
+        watchOverflow: true,
         breakpoints: {
             375: {
                 slidesPerView: 2,
