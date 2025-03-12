@@ -1,6 +1,9 @@
 .inner-container {
     width: 100%;
     height: auto;
+}
+
+.foot-cont {
     background: url('/img/footer/footer-glass_mobil_1x.png') right center no-repeat;
 }
 
@@ -176,6 +179,9 @@ body.modal-open {
 
     .inner-container {
         padding-bottom: 169px;
+    }
+
+    .foot-cont {
         background: url('/img/footer/footer-glass_tablet_1x.png') right center no-repeat;
     }
 
@@ -246,13 +252,15 @@ body.modal-open {
 }
 
 @media only screen and (min-width: 1440px) {
-    .inner-container {
+    .foot-cont {
         background: url('/img/footer/footer-glass_desktop_1x.png') right center no-repeat;
     }
 
-    .container {
+    .foot-cont {
         padding: 0 196px;
     }
+
+
 
     .email-container {
         width: 390px;
