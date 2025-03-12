@@ -32,15 +32,7 @@
      color: #fafafa;
  }
 
- .aboutme-circle {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 130px;
-     height: 130px;
-     background-color: #ED3B44;
-     border-radius: 50%;
- }
+
 
  .aboutme-skill {
      font-weight: 500;
