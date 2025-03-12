@@ -36,8 +36,8 @@ function initSwiper() {
         slidesPerView: 1,// change dynamically
         spaceBetween: 16,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".next-btn",
+            prevEl: ".prev-btn",
         },
         keyboard: {
             enabled: true,
