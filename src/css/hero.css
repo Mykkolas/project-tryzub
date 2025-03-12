@@ -7,6 +7,11 @@
     padding: 0px;
 }
 
+/*h1 {
+    font-weight: 500;
+    font-size: 50px;
+}*/
+
 .hero-background {
 background-image: 
 image-set(url('../img/hero+header/hero-mob-1x.png') 1x,
@@ -20,14 +25,13 @@ image-set(url('../img/hero+header/hero-mob-1x.png') 1x,
 
 .hero-title {
     font-weight: 500;
-    font-size: clamp(24px, 6vw, 50px);
+    font-size: 50px;
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #FAFAFA;
     padding: 281px 16px;
     text-align: left;
-    
 }
 
 ul {
@@ -85,14 +89,14 @@ ul {
     outline: none;
 }
 
-@media screen and (min-width: 768px){   
+@media screen and (min-width: 768px){ 
 .hero-background {
     background-image:
     image-set(url('../img/hero+header/hero_tab_1x.png') 1x,
             url('../img/hero+header/hero_tab_2x.png') 2x);
 }
 .hero-title {
-    font-size: clamp(30px, 5vw, 60px);
+    font-size: 90px;
     padding-left: 32px;
     padding-top: 300px;
 }
@@ -117,7 +121,7 @@ ul {
 }
 }
 
-@media screen and (min-width: 1440px){
+@media only screen and (min-width: 1440px){
     .hero-background {
 background-image:
     image-set(url('../img/hero+header/hero_dt_1x.png') 1x,
@@ -125,7 +129,6 @@ background-image:
 }
 
 .hero-title {
-    font-size: clamp(40px, 4vw, 80px);
     padding-left: 178px;
 }
 }
