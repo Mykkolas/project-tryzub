@@ -1,11 +1,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-  const projectsSection = document.querySelector("#projects");
+  const projectsSection = document.querySelector("#PROJECTS");
   if (!projectsSection) return;
   const projectsSwiperContainer = projectsSection.querySelector(".projects-swiper");
   const projectsPrevButton = projectsSection.querySelector(".projects-swiper-button-prev");
   const projectsNextButton = projectsSection.querySelector(".projects-swiper-button-next");
-    
+
   const projectsSwiper = new Swiper(projectsSwiperContainer, {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: projectsNextButton,
       prevEl: projectsPrevButton,
     },
-    on: {      
+    on: {
       init: function (swiper) {
         updateNavButtons(swiper);
-      },      
+      },
       slideChange: function (swiper) {
         updateNavButtons(swiper);
       },

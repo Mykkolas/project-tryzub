@@ -10,3 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initAccordion();
     initSwiper();
 });
+
+import { controlCoverAnimations } from "./js/covers";
+
+document.addEventListener("DOMContentLoaded", () => {
+    controlCoverAnimations();
+});
+
+import "./js/faq"
