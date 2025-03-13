@@ -1,14 +1,21 @@
 <header class="header-container">
-    <div class="container">
-      <div class="logo">
+  <div class="container">
+    <div class="logo">
       <a href="index.html" class="header-logo">
-        <img width="80" height="80" src="/img/hero+header/logo_1x.png" 
-        srcset="/img/hero+header/logo_1x.png 1x, /img/hero+header/logo_2x.png 2x" 
-        alt="Lloyd Jefferson" class="header-logo-img"></a>
-        <svg width="84" height="19" class="header-logo-icon">
-            <use  xlink:href="/img/hero+header/symbol-defs.svg#icon-jefferson"></use>
-                </svg>
-  
+        <img
+          width="80"
+          height="80"
+          src="/img/hero+header/logo_1x.png"
+          srcset="
+            /img/hero+header/logo_1x.png 1x,
+            /img/hero+header/logo_2x.png 2x
+          "
+          alt="Lloyd Jefferson"
+          class="header-logo-img"
+      /></a>
+      <svg width="84" height="19" class="header-logo-icon">
+        <use href="/img/icons.svg#icon-jefferson"></use>
+      </svg>
     </div>
       <div class="header-menu">
         <div class="menu-item">
@@ -37,8 +44,31 @@
             <use xlink:href="/img/hero+header/symbol-defs.svg#icon-Icon"></use>
         </svg>
       </div>
+      <nav class="nav-menu-wrap">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#ABOUTME" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#BENEFITS" class="nav-link">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#PROJECTS" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#FAQ" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+    <a href="#FOOTER" class="order-btn">Order the project</a>
+    <div class="burger-menu">
+      <svg class="burger-icon" width="28" height="28">
+        <use href="/img/icons.svg#icon-menu-burger"></use>
+      </svg>
+    </div>
+  </div>
+</header>
 
 <!--modal -->
 
