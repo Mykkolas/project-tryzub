@@ -3,7 +3,7 @@ import Accordion from 'accordion-js';
 
 new Accordion('.accordion-container', {
     showMultiple: true,
-    duration: 500,
+    duration: 900,
 });
 
 document.querySelector('.faq__list').addEventListener('click', event => {
